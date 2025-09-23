@@ -1,0 +1,49 @@
+.rating-page {
+  padding: 20px;
+}
+
+.back-btn {
+  margin-bottom: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: none;
+  background-color: #36aab9;
+  color: white;
+  border-radius: 5px;
+}
+
+.rating-page-content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product-image img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.product-rating {
+  flex: 1;
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+}
+
+.bar-container {
+  flex-grow: 1;
+  height: 8px;
+  background: #eee;
+  margin: 0 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  background: linear-gradient(135deg, #36aab9, #14565e);
+  border-radius: 4px;
+}

@@ -1,0 +1,41 @@
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
+
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <nav className="navbar">
+      {/* Logo */}
+      <div className="logo">
+        <img
+          src="/Laptop.png"
+          alt="Laptop Logo"
+        />
+        <h1>Laptop_DEKHO</h1>
+      </div>
+
+      {/* Hamburger for mobile */}
+      <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+
+      {/* Links */}
+      <ul className={`nav-links ${isOpen ? "open" : ""}`}>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/products">Category</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/products">Whishlist</Link></li>
+        <li><Link to="/products">Login</Link></li>
+        <li><Link to="/products">SignUp</Link></li>
+        <li><Link to="/products">Mycart</Link></li>
+      </ul>
+    </nav>
+  );
+}
+
+export default Navbar;

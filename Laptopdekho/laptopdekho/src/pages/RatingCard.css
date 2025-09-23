@@ -1,0 +1,75 @@
+.rating-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.rating-btn-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.rating-btn, select {
+  padding: 8px 14px;
+  border: none;
+  background: #36aab9;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.rating-btn:hover, select:hover {
+  background: #2e919d;
+}
+
+.rating-tooltip {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  padding: 15px;
+  width: 260px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  z-index: 100;
+  font-size: 13px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.tooltip-title {
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.rating-bars div {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  font-size: 12px;
+}
+
+.bar-container {
+  flex-grow: 1;
+  background: #f0f0f0;
+  border-radius: 3px;
+  height: 6px;
+  margin: 0 6px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  background: #36aab9;
+  border-radius: 3px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
