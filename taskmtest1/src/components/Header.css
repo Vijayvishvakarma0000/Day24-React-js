@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 0.6rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.logo .mark {
+  width: 32px;
+  height: 32px;
+  background: #06b6d4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Desktop nav links and Link */
+.nav-links a,
+.nav-links .cta,
+.nav-links a.Link {
+  color: white;
+  text-decoration: none;
+  padding: 0.4rem 0.6rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav-links a:hover,
+.nav-links .cta:hover,
+.nav-links a.Link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+
+.cta {
+  background: #06b6d4;
+  color: #012024;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.hamburger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: white;
+  position: relative;
+}
+.hamburger span::before,
+.hamburger span::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: white;
+}
+.hamburger span::before {
+  top: -6px;
+}
+.hamburger span::after {
+  top: 6px;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+}
+/* Mobile menu links and Link */
+.mobile-menu a,
+.mobile-menu .cta,
+.mobile-menu a.Link {
+  display: block;
+  padding: 0.8rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.mobile-menu a:hover,
+.mobile-menu .cta:hover,
+.mobile-menu a.Link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+
+/* Responsive */
+@media (max-width: 840px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .mobile-menu {
+    display: block;
+    background: #0b1220;
+  }
+}
