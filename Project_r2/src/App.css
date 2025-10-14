@@ -1,0 +1,20 @@
+
+
+.todo{
+    font-style: italic;
+    font-weight: 900;
+    font-size: 38px;
+}
+input{
+    width: 100%;
+    
+}
+.container{
+    text-align: left;
+    margin-top: 10px;
+    background-color: rgb(203, 130, 35);
+    
+}
+.margin1{
+    margin-top: 15px;
+}
